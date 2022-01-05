@@ -1,0 +1,13 @@
+syntax = "proto3";
+package test;
+service HelloEason{
+    rpc HelloEason(HelloEasonReq) returns (HelloEasonReply){}
+}
+message HelloEasonReq{
+    string name = 1;
+    int32 age =2;
+}
+
+message HelloEasonReply{
+    string result = 1;
+}
